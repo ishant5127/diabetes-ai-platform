@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: diapredict-ai
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: CORS_ORIGINS
+        value: "*"

@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────
+   TYPOGRAPHY
+   ───────────────────────────────────────────────────────────── */
+:root {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  /* Palette Constants */
+  --color-sage-bg: #2a312c;
+  --color-sage-dark: #1b201d;
+  --color-sage-muted: #849386;
+  --color-stone: #b8c0b6;
+  --color-stone-dark: #3e4740;
+  --color-ivory: #f7f6f2;
+  --color-amber-glow: #f59e0b;
+  --color-amber-soft: rgba(245, 158, 11, 0.15);
+  --color-emerald-soft: rgba(52, 211, 153, 0.15);
+}
+
+body {
+  font-family: var(--font-sans);
+  background: radial-gradient(circle at 65% 15%, rgba(92, 107, 96, 0.45) 0%, rgba(42, 49, 44, 0.95) 45%, #181d19 100%), #1f2521;
+  color: #f5f4ef;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: rgba(20, 25, 22, 0.5); }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.12); border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.22); }
+
+/* Typography Helper Classes */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   GLASSMORPHISM & SURFACE ELEVATIONS (INSPIRED BY REF 1 & 2)
+   ───────────────────────────────────────────────────────────── */
+
+/* Level 1: Deep Dark Dashboard Shell / Main Floating Panels */
+.glass-panel-deep {
+  background: rgba(18, 22, 20, 0.78);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.03) inset;
+}
+
+/* Level 2: Secondary Cards inside the Dashboard */
+.glass-card-dark {
+  background: rgba(30, 36, 32, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.35);
+}
+
+/* Level 3: Translucent Frosted Pills (Ref 1 step pills & Ref 2 metric capsules) */
+.glass-pill {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  transition: all 0.25s ease;
+}
+
+.glass-pill:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dark Minimalist Pill Button (From Ref 1 "CONNECT YOUR SPACE") */
+.btn-pill-dark {
+  background: #171c19;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #f7f6f2;
+  border-radius: 9999px;
+  padding: 0.85rem 1.6rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.45);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-pill-dark:hover {
+  background: #232925;
+  border-color: rgba(255, 255, 255, 0.28);
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px -8px rgba(0, 0, 0, 0.6);
+}
+
+.btn-pill-dark .icon-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbbf24;
+}
+
+/* Minimalist Form Inputs */
+.input-minimal {
+  background: rgba(18, 22, 20, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  color: #f7f6f2;
+  transition: all 0.25s ease;
+}
+
+.input-minimal:focus {
+  border-color: rgba(245, 158, 11, 0.6);
+  box-shadow: 0 0 25px -4px rgba(245, 158, 11, 0.18);
+  outline: none;
+}
+
+/* Ambient Backlight Lighting Glows */
+.ambient-glow-amber {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.22) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.ambient-glow-sage {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  background: radial-gradient(circle, rgba(132, 147, 134, 0.28) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Smooth floating animation for 3D visual centerpiece */
+@keyframes hover-breathing {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(0.5deg);
+  }
+}
+
+.animate-hover-companion {
+  animation: hover-breathing 7s ease-in-out infinite;
+}
+
+/* Slow rotation for diagnostic orbital rings */
+@keyframes ring-spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes ring-spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.animate-spin-ring {
+  animation: ring-spin-slow 40s linear infinite;
+}
+
+.animate-spin-ring-rev {
+  animation: ring-spin-reverse 30s linear infinite;
+}
+
+/* Subtle noise texture */
+.noise-texture {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+/* Recharts Custom Tooltip for dark muted theme */
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  background: rgba(18, 22, 20, 0.92) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5) !important;
+  color: #f7f6f2 !important;
+}

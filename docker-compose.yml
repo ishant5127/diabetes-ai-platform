@@ -1,0 +1,11 @@
+services:
+  diapredict-ai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - CORS_ORIGINS=*
+    restart: unless-stopped

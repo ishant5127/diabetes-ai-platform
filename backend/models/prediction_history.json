@@ -1,0 +1,200 @@
+[
+  {
+    "id": "633f8a89-f9f6-4136-8a0a-f05160cd3a01",
+    "timestamp": "2026-11-24T20:42:32.430026+00:00",
+    "patient_name": "Sarah Jenkins",
+    "patient_email": "sarah.jenkins@example.com",
+    "patient_data": {
+      "patient_name": "Sarah Jenkins",
+      "patient_email": "sarah.jenkins@example.com",
+      "Pregnancies": 2,
+      "Glucose": 120.0,
+      "BloodPressure": 72.0,
+      "SkinThickness": 25.0,
+      "Insulin": 85.0,
+      "BMI": 28.4,
+      "DiabetesPedigreeFunction": 0.38,
+      "Age": 33
+    },
+    "prediction": 0,
+    "probability": 0.2653,
+    "risk_level": "Low",
+    "label": "Non-Diabetic"
+  },
+  {
+    "id": "cb6e71b3-e80f-44ae-9bad-e46cdac5d677",
+    "timestamp": "2026-11-24T18:45:48.079321+00:00",
+    "patient_name": "Claire Underwood",
+    "patient_email": "c.underwood@horizon.med",
+    "patient_data": {
+      "patient_name": "Claire Underwood",
+      "patient_email": "c.underwood@horizon.med",
+      "Pregnancies": 5,
+      "Glucose": 178.0,
+      "BloodPressure": 86.0,
+      "SkinThickness": 38.0,
+      "Insulin": 210.0,
+      "BMI": 36.4,
+      "DiabetesPedigreeFunction": 0.82,
+      "Age": 53
+    },
+    "prediction": 1,
+    "probability": 0.8739,
+    "risk_level": "High",
+    "label": "Diabetic"
+  },
+  {
+    "id": "11c91e11-36ec-4269-9dbd-6f90e6f504d7",
+    "timestamp": "2026-11-24T18:44:51.572649+00:00",
+    "patient_name": "Claire Underwood",
+    "patient_email": "c.underwood@horizon.med",
+    "patient_data": {
+      "patient_name": "Claire Underwood",
+      "patient_email": "c.underwood@horizon.med",
+      "Pregnancies": 5,
+      "Glucose": 178.0,
+      "BloodPressure": 86.0,
+      "SkinThickness": 38.0,
+      "Insulin": 210.0,
+      "BMI": 36.4,
+      "DiabetesPedigreeFunction": 0.82,
+      "Age": 53
+    },
+    "prediction": 1,
+    "probability": 0.8739,
+    "risk_level": "High",
+    "label": "Diabetic"
+  },
+  {
+    "id": "657df88e-30d1-41ad-b9f5-1cab37d9fd2a",
+    "timestamp": "2026-11-24T18:41:37.030355+00:00",
+    "patient_name": "Dr. Marcus Holloway",
+    "patient_email": "marcus.h@health.org",
+    "patient_data": {
+      "patient_name": "Dr. Marcus Holloway",
+      "patient_email": "marcus.h@health.org",
+      "Pregnancies": 2,
+      "Glucose": 142.0,
+      "BloodPressure": 78.0,
+      "SkinThickness": 26.0,
+      "Insulin": 110.0,
+      "BMI": 30.5,
+      "DiabetesPedigreeFunction": 0.52,
+      "Age": 40
+    },
+    "prediction": 1,
+    "probability": 0.6398,
+    "risk_level": "High",
+    "label": "Diabetic"
+  },
+  {
+    "id": "5ff1b3b5-75ed-44ea-b4e6-2dc0d86562df",
+    "timestamp": "2026-11-24T17:59:33.120378+00:00",
+    "patient_name": "Elena Vance",
+    "patient_email": "elena.vance@healthnet.org",
+    "patient_data": {
+      "patient_name": "Elena Vance",
+      "patient_email": "elena.vance@healthnet.org",
+      "Pregnancies": 0,
+      "Glucose": 120.0,
+      "BloodPressure": 72.0,
+      "SkinThickness": 25.0,
+      "Insulin": 85.0,
+      "BMI": 23.1,
+      "DiabetesPedigreeFunction": 0.38,
+      "Age": 21
+    },
+    "prediction": 0,
+    "probability": 0.0563,
+    "risk_level": "Low",
+    "label": "Non-Diabetic"
+  },
+  {
+    "id": "5431c33c-1492-4846-a585-2fc02aade6c9",
+    "timestamp": "2026-11-24T17:36:25.710029+00:00",
+    "patient_name": "Claire Underwood",
+    "patient_email": "c.underwood@horizon.med",
+    "patient_data": {
+      "patient_name": "Claire Underwood",
+      "patient_email": "c.underwood@horizon.med",
+      "Pregnancies": 5,
+      "Glucose": 178.0,
+      "BloodPressure": 86.0,
+      "SkinThickness": 38.0,
+      "Insulin": 210.0,
+      "BMI": 36.4,
+      "DiabetesPedigreeFunction": 0.82,
+      "Age": 53
+    },
+    "prediction": 1,
+    "probability": 0.8739,
+    "risk_level": "High",
+    "label": "Diabetic"
+  },
+  {
+    "id": "89ccffd4-1b91-42d8-a799-a8b5b9c6c454",
+    "timestamp": "2026-11-24T17:22:12.045902+00:00",
+    "patient_name": "Sarah Jenkins",
+    "patient_email": "sarah.j@gmail.com",
+    "patient_data": {
+      "patient_name": "Sarah Jenkins",
+      "patient_email": "sarah.j@gmail.com",
+      "Pregnancies": 1,
+      "Glucose": 92.0,
+      "BloodPressure": 68.0,
+      "SkinThickness": 18.0,
+      "Insulin": 75.0,
+      "BMI": 22.5,
+      "DiabetesPedigreeFunction": 0.24,
+      "Age": 26
+    },
+    "prediction": 0,
+    "probability": 0.0213,
+    "risk_level": "Low",
+    "label": "Non-Diabetic"
+  },
+  {
+    "id": "e73646f2-014f-468e-a678-6a66886e5d27",
+    "timestamp": "2026-11-24T17:22:05.610567+00:00",
+    "patient_name": "Marcus Reed",
+    "patient_email": "m.reed@biocare.io",
+    "patient_data": {
+      "patient_name": "Marcus Reed",
+      "patient_email": "m.reed@biocare.io",
+      "Pregnancies": 3,
+      "Glucose": 168.0,
+      "BloodPressure": 84.0,
+      "SkinThickness": 32.0,
+      "Insulin": 195.0,
+      "BMI": 34.2,
+      "DiabetesPedigreeFunction": 0.78,
+      "Age": 46
+    },
+    "prediction": 1,
+    "probability": 0.8664,
+    "risk_level": "High",
+    "label": "Diabetic"
+  },
+  {
+    "id": "4f7b9675-05ed-48c9-aaaf-37e29682d7b2",
+    "timestamp": "2026-11-24T16:52:48.911874+00:00",
+    "patient_name": "Rebecca Torres",
+    "patient_email": "r.torres@metrohealth.org",
+    "patient_data": {
+      "patient_name": "Rebecca Torres",
+      "patient_email": "r.torres@metrohealth.org",
+      "Pregnancies": 2,
+      "Glucose": 130.0,
+      "BloodPressure": 70.0,
+      "SkinThickness": 25.0,
+      "Insulin": 100.0,
+      "BMI": 28.5,
+      "DiabetesPedigreeFunction": 0.45,
+      "Age": 35
+    },
+    "prediction": 0,
+    "probability": 0.4259,
+    "risk_level": "Moderate",
+    "label": "Non-Diabetic"
+  }
+]
